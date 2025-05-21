@@ -162,8 +162,8 @@ function Verlauf({zahlenverlauf, text}){
             <span className="px-3">{zahl.versuche}-</span>
             <span className="px-3">{zahl?.nummer}</span>
             <span className={`
-              ${zahl.nachricht?.includes('hoch!') ? 'text-red-500' : 
-              zahl.nachricht?.includes('niedrig!') ? 'text-blue-500' : 
+              ${zahl.nachricht?.includes('HOCH!') ? 'text-red-500' : 
+              zahl.nachricht?.includes('NIEDRIG!') ? 'text-blue-500' : 
               zahl.nachricht?.includes('nah') ? 'text-yellow-500' : 
               zahl.nachricht?.includes('erraten') ? 'text-violet-500' : ''} 
               px-3 text-nowrap`
